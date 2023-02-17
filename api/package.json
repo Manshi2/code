@@ -1,0 +1,52 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API for carenest project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack",
+    "prod-build": "gulp",
+    "dev": "nodemon ./server.js localhost 3080"
+  },
+  "type": "commonjs",
+  "author": "siddiquiaffan",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.190.0",
+    "@google-cloud/local-auth": "^2.1.0",
+    "aws-sdk": "^2.1234.0",
+    "bcrypt": "^5.1.0",
+    "bucket": "^0.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "date-fns": "^2.29.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "googleapis": "^105.0.0",
+    "graphql-request": "^5.0.0",
+    "html-react-parser": "^3.0.4",
+    "http-proxy-middleware": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.8.1",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^3.0.1",
+    "nodemailer": "^6.8.0",
+    "razorpay": "^2.8.4",
+    "react": "^18.2.0",
+    "react-date-range": "^1.4.0",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "axios": "^1.2.1",
+    "del": "^7.0.0",
+    "fancy-log": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.1.0",
+    "nodemon": "^2.0.20",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-stream": "^7.0.0"
+  }
+}

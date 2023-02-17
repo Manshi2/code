@@ -1,0 +1,9 @@
+input[name="type"]:checked + label {
+    @apply bg-primary border-primary text-white font-semibold shadow-xl;
+    /* @apply border-red-600; */
+}
+/* input[name="type"] + label */
+
+/* input[type="radio"]:focus + label {
+    border: 2px dashed #444;
+} */

@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "install_packages": "cd api && npm install && cd ../frontend && npm install --force",
+        "build": "cd api && npm run prod-build",
+        "start": "node ./carenest-production/api/api.bundle.js"
+    }
+}

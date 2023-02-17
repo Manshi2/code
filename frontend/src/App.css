@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+  scroll-behavior: smooth;
+}
+.App{
+  font-family: 'Montserrat';
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+*{
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.App-link {
+  color: #61DAFB;
+}
+.slider-control-bottomcenter button{
+  background: #9AB898 !important;
+  margin-top: 20px !important;
+  border-radius: 50%;
+  width: 12px !important;
+  height: 12px !important;
+ }
+ .slider-control-bottomcenter svg{
+   display: none !important;
+ }
+.card{
+  box-shadow:  4px 4px 4px rgb(232, 231, 231);
+}
+.container:hover {
+  cursor: pointer;
+}
+.container:hover .cont{
+   background-color: white;
+   color: #E94C60;
+  transition: filter 0.4s ease-in-out;
+}
+.container:hover img {
+  filter: none;
+}
+.star .slider-control-bottomcenter button{
+  display: none !important;
+ }
+ 
+ .screen{
+  background-image: url("photo/m&c_landing.svg");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+.screen1{
+  background-image: url("photo/skin_landing.svg");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+
+}
+.screen2{
+  background-image: url("photo/healthy_landing.svg");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+.screen3{
+  background-image: url("photo/medicallanding.svg");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+}
+.screen4{
+  background-image: url("photo/nutrition_landing.svg");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.screen5{
+  background-image: url("photo/weight_land.svg");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.main{
+  background-image: url("photo/ec2.png");
+}
+.content{
+  background-image: url("photo/Ellipse\ 6.png");
+}
+.contact{
+  background-image: url("photo/footer.png");
+}
+.new{
+  box-shadow: rgb(217, 215, 215) 0px 6px ;
+ 
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .slide{
+    background-size: 100% 90%;
+  }
+  .contact {
+display: none;
+}
+.content{
+  display: none;
+}
+}
+
+.paging-item{
+  @apply mx-1;
+}
+
+[title] {
+  position: relative;
+}
+
+[title]:after {
+  content: attr(title);
+  @apply absolute bg-slate-700/20 w-max opacity-0 text-xs font-semibold px-2 py-1 bottom-full;
+  -webkit-transition: opacity 0.01s ease-in-out; /* 👈 Change the time to meet your requirements. */
+}
+[title]:hover:after {
+  opacity: 1;
+}
