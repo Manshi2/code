@@ -15,9 +15,9 @@ function Appointment(props) {
     <title> Book an online doctor consultation with CareNest</title>
       <meta name="description" content="Start with Online Medical Consultation, CareNest is the best online doctor consultation website to take care of your health." />
       <meta name="keywords" content="online doctor consultation, online medical consultation" />   
-      
-   
+ 
     </MetaTags>
+    
       <div className="App ">
         <Header />
 
