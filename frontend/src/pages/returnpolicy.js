@@ -1,11 +1,18 @@
 import React from "react"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import { MetaTags } from "react-meta-tags";
 export default function ReturnPolicy() {
 
     return (
         <>
+         <MetaTags>
+    <title> Information on CareNest return policy</title>
+      <meta name="description" content=" All returns must be postmarked within seven 7 days of the purchase date." />
+      <meta name="keywords" content="carenest" />   
+      
+   
+    </MetaTags>
 
             <div className="App ">
                 <Header />

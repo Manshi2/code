@@ -11,11 +11,17 @@ import cookie from "../photo/cookie.png"
 import mark from "../photo/x-mark.png"
 import block from "../photo/abc-block.png"
 import collection from "../photo/collection.png"
-
+import { MetaTags } from "react-meta-tags";
 export default function privacy() {
   return (
     <>
-    
+     <MetaTags>
+    <title>Main privacy of our visitors | CareNest</title>
+      <meta name="description" content="This Privacy Policy document contains types of information that is collected and recorded by CareNest and how we use it." />
+     
+      
+   
+    </MetaTags>
     <div className="App ">
         <Header />
       

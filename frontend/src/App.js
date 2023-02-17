@@ -19,13 +19,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import half from './photo/a.png'
 import { AiFillCaretLeft, AiFillCaretRight, AiFillHeart } from 'react-icons/ai';
 import { BsArrowLeft, BsArrowRight, BsShieldLockFill } from 'react-icons/bs';
-
+import MetaTags from 'react-meta-tags';
 import './App.css';
 import Typewriter from "typewriter-effect"
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Link } from 'react-router-dom';
 import { FeaturedPosts } from "./sections/index";
+
 
 function App() {
   const [username, setUsername] = useState("");
@@ -103,6 +104,15 @@ function App() {
   };
 
   return (
+    <>
+    <MetaTags>
+    <title> CareNest online medical consultation for Your Health</title>
+      <meta name="description" content="CareNest is an online medical consultation with for Your overall Health, Can Improve Your Life." />
+      
+      
+   
+    </MetaTags>
+  
     <div className="App overflow-x-hidden">
       <Header />
       <section className="carousel-container relative">
@@ -648,6 +658,7 @@ function App() {
 
       <Footer />
     </div>
+    </>
   );
 }
 

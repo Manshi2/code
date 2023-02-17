@@ -1,12 +1,19 @@
 import React from "react"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import { MetaTags } from "react-meta-tags";
 export default function privacy() {
 
   return (
     <>
-    
+     <MetaTags>
+    <title> Online doctor consultation Privacy Policy | CareNest</title>
+      <meta name="description" content="  These terms and conditions outline the rules and regulations for the use of CareNest online doctor consultation." />
+      <meta name="keywords" content="online doctor consultation" />   
+      
+   
+    </MetaTags>
+  
     <div className="App ">
         <Header />
       

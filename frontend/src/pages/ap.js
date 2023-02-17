@@ -6,11 +6,18 @@ import "react-step-progress-bar/styles.css";
 import '../styles/appointment.css';
 import Footer from "../components/Footer";
 import AppointmentForm from '../components/AppointmentForm'
-
+import { MetaTags } from "react-meta-tags";
 function Appointment(props) {
 
   return (
     <>
+     <MetaTags>
+    <title> Book an online doctor consultation with CareNest</title>
+      <meta name="description" content="Start with Online Medical Consultation, CareNest is the best online doctor consultation website to take care of your health." />
+      <meta name="keywords" content="online doctor consultation " />   
+      
+   
+    </MetaTags>
       <div className="App ">
         <Header />
 
